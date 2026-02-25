@@ -12,7 +12,7 @@ def formata_numero(valor, prefixo = ''):
         valor /= 1000
     return f'{prefixo} {valor:.2f} milhões'
 
-st.title('DASHBOARD DE VENDAS :shopping_trolley:')
+st.title('DASHBOARD DE VENDAS')
 
 url = 'https://labdados.com/produtos'
 
@@ -191,4 +191,5 @@ with aba3:
         st.metric('Quantidade de vendas', formata_numero(dados.shape[0]))
 
 st.dataframe(dados)
+
 
